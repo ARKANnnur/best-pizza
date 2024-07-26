@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .font-outline-2 {
+    color: white;
+    text-shadow:
+     -3px -3px 0 #0C0C0C,  
+      3px -3px 0 #0C0C0C,
+      -3px 3px 0 #0C0C0C,
+       3px 3px 0 #0C0C0C;
+  }
+  .font-outline-4 {
+    -webkit-text-stroke: 4px #FF0000;
+  }
+  .font-outline {
+    -webkit-text-stroke: 1px #FF0000;
+  }
+
+  .input {
+    @apply h-12 w-full bg-dark3 px-5 focus:border-b focus:border-light focus:outline-none
+  }
+}
+
+/* https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */
+.loader {
+  width: 45px;
+  aspect-ratio: 0.75;
+  --c: no-repeat linear-gradient(#d5f03f 0 0);
+  background: var(--c) 0% 50%, var(--c) 50% 50%, var(--c) 100% 50% ;
+  background-size: 20% 50%;
+  animation: loading 1s infinite linear;
+  display: block;
+}
+
+.layout {
+  background-image: url('./assets/bg-home.jpg');
+  min-height: 100vh;
+  background-size: cover;
+}
+
+@keyframes loading {
+  20% {
+    background-position: 0% 0%, 50% 50%, 100% 50%;
+  }
+  40% {
+    background-position: 0% 100%, 50% 0%, 100% 50%;
+  }
+  60% {
+    background-position: 0% 50%, 50% 100%, 100% 0%;
+  }
+  80% {
+    background-position: 0% 50%, 50% 50%, 100% 100%;
+  }
+}
+
+.blurbox {
+  background: rgba( 21, 21, 21, 0.45 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+}
