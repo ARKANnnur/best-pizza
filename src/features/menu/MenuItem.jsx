@@ -72,36 +72,6 @@ function MenuItem({ pizza }) {
             </Button>
           )}
         </div>
-        {/* <div className="grow p-2">
-          <p className="font-semibold">{name}</p>
-          <p className="font-default text-sm">{ingredients.join(', ')}</p>
-          <div className="font-semibold">
-            {!soldOut ? <p>{formatCurrency(unitPrice)}</p> : <p>Sold out</p>}
-          </div>
-        </div>
-        <div className="flex h-[auto] items-end justify-end p-2">
-          {!soldOut && (
-            <>
-              {!currentQuantity ? (
-                <Button
-                  type="secondary2Red"
-                  padding="large"
-                  size="text-base sm:text-xl"
-                  onClick={handleSubmit}
-                >
-                  {formatCurrency(unitPrice)}
-                </Button>
-              ) : (
-                <>
-                  <UpdateItemQuantity pizzaId={id}>
-                    {currentQuantity}
-                  </UpdateItemQuantity>
-                  <DeleteItem pizzaId={id} />
-                </>
-              )}
-            </>
-          )}
-        </div> */}
       </div>
     </li>
   );

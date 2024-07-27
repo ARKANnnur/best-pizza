@@ -22,10 +22,6 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: '/testing',
-        element: <Testing />,
-      },
-      {
         path: '/menu',
         element: <Menu />,
         loader: menuLoader,
