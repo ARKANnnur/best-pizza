@@ -4,7 +4,6 @@ import Error from './ui/Error.jsx';
 import AppLayout from './ui/AppLayout.jsx';
 
 import Menu, { Loader as menuLoader } from './features/menu/Menu.jsx';
-import Testing from './features/testing/Testing';
 import Cart from './features/cart/Cart.jsx';
 import CreateOrder, {
   Action as createOrderAction,
