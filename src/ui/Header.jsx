@@ -12,8 +12,11 @@ function Header() {
         to="/"
         className="text-yellow-300 text-center text-lg font-semibold lg:text-2xl"
       >
-        <span className="text-primary">Best</span>{' '}
-        <span className="text-secondary2">Pizza</span>
+        <img
+          src="/pizzaLogo.png"
+          alt="Pizza-Logo"
+          className="h-[53px] w-[77px]"
+        />
       </Link>
       <div className="flex items-center gap-5">
         <Username />
