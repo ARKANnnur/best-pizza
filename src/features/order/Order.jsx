@@ -19,7 +19,6 @@ function Order() {
   useEffect(() => {
     if (!fetch.data && fetch.state === 'idle') return fetch.load('/menu');
   }, [fetch]);
-  console.log(fetch.data);
 
   const {
     id,
