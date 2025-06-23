@@ -20,12 +20,12 @@ function CreateUser() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="my-5 text-center text-base font-medium tracking-wide text-light sm:text-xl md:text-2xl xl:text-[32px] "
+      className="my-5 text-center text-base font-medium tracking-wide text-light sm:text-xl md:text-2xl"
     >
       <p>👋 Welcome! Please start by telling us your name:</p>
 
       <input
-        className="border-b border-light bg-primary/20 p-2 text-center placeholder:text-light focus:border-b-2 focus:outline-none"
+        className="mt-5 border-b border-light bg-primary/20 p-2 text-center placeholder:text-light focus:border-b-2 focus:outline-none"
         type="text"
         placeholder="Your full name"
         value={username}
@@ -34,7 +34,13 @@ function CreateUser() {
 
       {username !== '' && (
         <div className="text-orange-600 mt-5 font-semibold">
-          <Button type="secondary2Dark" padding="medium">
+          <Button
+            type="secondary2Dark"
+            padding="medium"
+            custom="relative before:content-[''] before:absolute before:inset-0 before:outline before:outline-4 before:outline-[#fff] 
+          before:outline-offset-4 before:transition-transform before:duration-300
+           before:-z-10 transition-transform duration-300 hover:before:translate-x-8 hover:before:translate-y-3 hover:before:scale-100"
+          >
             Start ordering
           </Button>
         </div>

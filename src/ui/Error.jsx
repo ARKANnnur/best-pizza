@@ -6,7 +6,7 @@ function Error() {
   console.log(error);
 
   return (
-    <div className="flex h-screen items-center justify-center">
+    <div className="flex h-screen items-center justify-center text-light">
       <div className="text-center">
         <h1 className="text-2xl font-semibold">Something went wrong 😢</h1>
         <p className="mb-5 text-lg font-thin text-red-600">

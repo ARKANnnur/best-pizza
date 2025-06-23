@@ -10,7 +10,7 @@ function Button({
   custom,
   onClick,
 }) {
-  const base = !size ? 'text-base sm:text-xl md:text-2xl xl:text-[32px]' : size;
+  const base = !size ? 'text-base sm:text-xl md:text-2xl' : size;
 
   const styles = {
     primary: 'bg-primary text-light',

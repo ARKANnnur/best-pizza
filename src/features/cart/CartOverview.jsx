@@ -10,8 +10,8 @@ function CartOverview() {
   if (!totalCartQuantity) return null;
 
   return (
-    <div className="fixed inset-x-0 bottom-0 flex h-16 items-center justify-between bg-dark2">
-      <div className="flex h-16 items-center text-base font-semibold tracking-wide sm:text-lg">
+    <div className="fixed inset-x-0 bottom-0 flex h-[10dvh] items-center justify-between bg-dark2">
+      <div className="flex h-full items-center text-base font-semibold tracking-wide sm:text-lg">
         <span className="flex h-full items-center bg-secondary2 px-2 text-secondary">
           {totalCartQuantity} pizzas{' '}
         </span>
@@ -21,9 +21,9 @@ function CartOverview() {
       </div>
       <LinkButton
         to="/cart"
-        custom="h-16 bg-primary p-4 text-base text-light hover:bg-primary2 sm:text-xl md:text-2xl"
+        custom="h-full bg-primary p-4 text-base flex justify-center items-center text-light hover:bg-primary2 sm:text-xl md:text-2xl"
       >
-        Open cart &rarr;
+       <span> Open cart &rarr;</span>
       </LinkButton> 
     </div>
   );

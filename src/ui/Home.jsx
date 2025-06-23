@@ -26,10 +26,12 @@ function Home() {
             type="secondary2Dark"
             padding="small"
             to="/menu"
-            custom="w-1/2 h-1/2 overflow-auto text-center my-5"
+            custom="text-center my-5 relative before:content-[''] before:absolute before:inset-0 before:outline before:outline-4 before:outline-[#fff] 
+          before:outline-offset-4 before:transition-transform before:duration-300
+          before:translate-x-8 before:translate-y-3 before:-z-10 before:scale-90 transition-transform duration-300 hover:before:translate-x-0 hover:before:translate-y-0 hover:before:scale-100"
           >
             Continue Ordering
-            <span>{userName}</span>
+            <span> {userName}</span>
           </Button>
         ) : (
           <CreateUser />

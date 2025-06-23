@@ -6,7 +6,7 @@ function Header() {
   const location = useLocation();
 
   return (
-    <div className=" flex h-16 items-center justify-between px-5 lg:px-10">
+    <div className="flex h-16 items-center justify-between p-5 lg:p-10">
       <Link
         to="/"
         className="text-yellow-300 text-center text-lg font-semibold lg:text-2xl"
